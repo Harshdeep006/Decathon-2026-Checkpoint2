@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AI Traffic Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header-->
+     <div class="header">
+       <h1> AI Traffic Controller</h1>
+       <p> Status: <span id="system-status">System Active</span></p>
+       </div>
+        <div class="city-grid">
+            <div class="sector" id="sector1">
+                <h2> Sector 1</h2>
+                <div class="traffic-light red"></div>
+                <span class="status-text"> STOPPED</span>
+            </div>
+            <div class="sector" id="sector2">
+                <h2>Sector 2</h2>
+                <div class="traffic-light red"></div>
+                <span class="status-text">STOPPED</span>
+            </div>
+            <div class="sector" id="sector3">
+                <h2> Sector 3</h2>
+                <div class="traffic-light red"></div>
+                <span class="status-text">STOPPED</span>
+            </div>
+            <div class="sector" id="sector4">
+                <h2>Sector 4</h2>
+                <div class="traffic-light red"></div>
+                <span class="status-text">STOPPED</span>
+            </div>
+        </div>
+        <div class="control-panel">
+            <input type="text" id="emergencyinput" placeholder="Describe the emergency(e.g. 'fire truck in sector1 need to go sector 2')"/>
+            <button onclick="sendalert()">Dispatch Agent</button>
+        </div>
+        <div class="agent-log" id="agentLog"> System Ready...</div>
+          <script src="script.js"></script>
+       </body>
+</body>
+</html>

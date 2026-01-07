@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.h1{
+   font-size: 2em;
+   margin-bottom: 10px;
+   text-box: normal;
+}
+
+.header { margin-bottom: 20px; }
+
+/* The 2x2 Grid */
+.city-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sector {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+/* The Traffic Light Circle */
+.traffic-light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: background-color 0.5s ease;
+}
+
+/* Active States */
+.traffic-light.red {
+    background-color: #ff4d4d;
+    box-shadow: 0 0 20px #ff4d4d;
+}
+
+.traffic-light.green {
+    background-color: #00e676;
+    box-shadow: 0 0 20px #00e676;
+}
+
+/* Control Panel */
+.control-panel {
+    margin-top: 30px;
+}
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover { background-color: #ff2e4d; }
+
+.agent-log {
+    margin-top: 20px;
+    font-family: monospace;
+    color: #00e676;
+}
